@@ -24,6 +24,12 @@ public class Tablero {
             return "ganó";
             
         }
+        if(letras[0][0].equals(letras[1][0]) && letras[0][0].equals(letras[1][2]) && letras[1][0].equals(letras[0][2]) ){
+           
+            return "ganó";
+            
+        }
+       
         
         return ""; 
         
