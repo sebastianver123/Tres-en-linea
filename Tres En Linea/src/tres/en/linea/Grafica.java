@@ -40,6 +40,7 @@ public class Grafica extends javax.swing.JFrame {
         boton7 = new javax.swing.JButton();
         boton8 = new javax.swing.JButton();
         boton9 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,31 +103,38 @@ public class Grafica extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Resultado: ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(boton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(boton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(boton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(boton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(boton4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(boton5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(boton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(boton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(boton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,7 +154,9 @@ public class Grafica extends javax.swing.JFrame {
                     .addComponent(boton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(boton9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(19, 19, 19))
         );
 
         pack();
@@ -160,7 +170,8 @@ public class Grafica extends javax.swing.JFrame {
 
           
         this.boton1.setText(this.Clic.simbolo());
-       
+        this.Clic.letras[0][0]=this.boton1.getText();
+        
         
     }//GEN-LAST:event_boton1MouseClicked
 
@@ -168,7 +179,7 @@ public class Grafica extends javax.swing.JFrame {
     
         
         this.boton2.setText(this.Clic.simbolo());
-        
+        this.Clic.letras[0][1]=this.boton1.getText();
         
     }//GEN-LAST:event_boton2MouseClicked
 
@@ -176,7 +187,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton3.setText(this.Clic.simbolo());
-        
+        this.Clic.letras[0][2]=this.boton1.getText();
         
     }//GEN-LAST:event_boton3MouseClicked
 
@@ -184,7 +195,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton4.setText(this.Clic.simbolo());
-        
+         this.Clic.letras[1][0]=this.boton1.getText();
         
     }//GEN-LAST:event_boton4MouseClicked
 
@@ -192,7 +203,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton5.setText(this.Clic.simbolo());
-                
+         this.Clic.letras[1][1]=this.boton1.getText();       
         
     }//GEN-LAST:event_boton5MouseClicked
 
@@ -200,7 +211,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
         this.boton6.setText(this.Clic.simbolo());
-        
+        this.Clic.letras[1][2]=this.boton1.getText();
         
     }//GEN-LAST:event_boton6MouseClicked
 
@@ -208,7 +219,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton7.setText(this.Clic.simbolo());
-        
+         this.Clic.letras[2][0]=this.boton1.getText();
         
     }//GEN-LAST:event_boton7MouseClicked
 
@@ -216,7 +227,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton8.setText(this.Clic.simbolo());
-        
+         this.Clic.letras[2][1]=this.boton1.getText();
         
     }//GEN-LAST:event_boton8MouseClicked
 
@@ -224,7 +235,7 @@ public class Grafica extends javax.swing.JFrame {
 
         
          this.boton9.setText(this.Clic.simbolo());
-        
+         this.Clic.letras[2][2]=this.boton1.getText();
         
     }//GEN-LAST:event_boton9MouseClicked
 
@@ -273,5 +284,6 @@ public class Grafica extends javax.swing.JFrame {
     private javax.swing.JButton boton7;
     private javax.swing.JButton boton8;
     private javax.swing.JButton boton9;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
