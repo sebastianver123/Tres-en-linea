@@ -12,16 +12,26 @@ package tres.en.linea;
 public class Tablero {
     
     String[] letras=new String[9];
+    int nClic=0;
+    String nombre;
     
     
-    void Calculo(){
-      
-        
-        
-        
+    
+    
+    void CambiarLetra(){
+    
+    
     }
-    
-    
-    
-    
+      public String simbolo(){
+            if (nClic==0){
+                nClic=1;
+                return "0";
+            }
+            else{
+                nClic=0;
+                return "X";
+            } 
+               
+        }
+
 }

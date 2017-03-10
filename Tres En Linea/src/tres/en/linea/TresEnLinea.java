@@ -16,12 +16,14 @@ public class TresEnLinea {
      */
     public static void main(String[] args) {
 
-           
+        Tablero miTablero= new Tablero();
+        Tablero jug1= new Tablero();
+        Tablero jug2= new Tablero();           
+        
         Grafica miGrafica=new Grafica();
         miGrafica.setVisible(true);
-
-
-
+  
+        miGrafica.Clic=miTablero;
 
     }
     

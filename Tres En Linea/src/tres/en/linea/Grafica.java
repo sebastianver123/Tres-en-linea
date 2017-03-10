@@ -11,8 +11,7 @@ package tres.en.linea;
  */
 public class Grafica extends javax.swing.JFrame {
 
-    int numeroClics;
-    
+    Tablero Clic;
     
     
     /**
@@ -159,15 +158,16 @@ public class Grafica extends javax.swing.JFrame {
 
     private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
 
-            
-        this.boton1.setText("X");       
-               
+          
+        this.boton1.setText(this.Clic.simbolo());
+       
+        
     }//GEN-LAST:event_boton1MouseClicked
 
     private void boton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton2MouseClicked
     
         
-        this.boton2.setText("X");
+        this.boton2.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton2MouseClicked
@@ -175,7 +175,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton3MouseClicked
 
         
-        this.boton3.setText("X");
+         this.boton3.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton3MouseClicked
@@ -183,7 +183,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton4MouseClicked
 
         
-        this.boton4.setText("X");
+         this.boton4.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton4MouseClicked
@@ -191,7 +191,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton5MouseClicked
 
         
-        this.boton5.setText("X");
+         this.boton5.setText(this.Clic.simbolo());
                 
         
     }//GEN-LAST:event_boton5MouseClicked
@@ -199,7 +199,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton6MouseClicked
 
         
-        this.boton6.setText("X");
+        this.boton6.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton6MouseClicked
@@ -207,7 +207,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton7MouseClicked
 
         
-        this.boton7.setText("X");
+         this.boton7.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton7MouseClicked
@@ -215,7 +215,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton8MouseClicked
 
         
-        this.boton8.setText("X");
+         this.boton8.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton8MouseClicked
@@ -223,7 +223,7 @@ public class Grafica extends javax.swing.JFrame {
     private void boton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton9MouseClicked
 
         
-        this.boton9.setText("X");
+         this.boton9.setText(this.Clic.simbolo());
         
         
     }//GEN-LAST:event_boton9MouseClicked
