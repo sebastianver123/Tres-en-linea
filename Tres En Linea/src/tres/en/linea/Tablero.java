@@ -14,4 +14,14 @@ public class Tablero {
     String[] letras=new String[9];
     
     
+    void Calculo(){
+      
+        
+        
+        
+    }
+    
+    
+    
+    
 }

@@ -11,10 +11,15 @@ package tres.en.linea;
  */
 public class Grafica extends javax.swing.JFrame {
 
+    int numeroClics;
+    
+    
+    
     /**
      * Creates new form Grafica
      */
     public Grafica() {
+        
         initComponents();
     }
 
@@ -38,6 +43,65 @@ public class Grafica extends javax.swing.JFrame {
         boton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        boton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton1MouseClicked(evt);
+            }
+        });
+        boton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton1ActionPerformed(evt);
+            }
+        });
+
+        boton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton3MouseClicked(evt);
+            }
+        });
+
+        boton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton4MouseClicked(evt);
+            }
+        });
+
+        boton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton5MouseClicked(evt);
+            }
+        });
+
+        boton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton2MouseClicked(evt);
+            }
+        });
+
+        boton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton6MouseClicked(evt);
+            }
+        });
+
+        boton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton7MouseClicked(evt);
+            }
+        });
+
+        boton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton8MouseClicked(evt);
+            }
+        });
+
+        boton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                boton9MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -88,6 +152,81 @@ public class Grafica extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_boton1ActionPerformed
+
+    private void boton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton1MouseClicked
+
+            
+        this.boton1.setText("X");       
+               
+    }//GEN-LAST:event_boton1MouseClicked
+
+    private void boton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton2MouseClicked
+    
+        
+        this.boton2.setText("X");
+        
+        
+    }//GEN-LAST:event_boton2MouseClicked
+
+    private void boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton3MouseClicked
+
+        
+        this.boton3.setText("X");
+        
+        
+    }//GEN-LAST:event_boton3MouseClicked
+
+    private void boton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton4MouseClicked
+
+        
+        this.boton4.setText("X");
+        
+        
+    }//GEN-LAST:event_boton4MouseClicked
+
+    private void boton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton5MouseClicked
+
+        
+        this.boton5.setText("X");
+                
+        
+    }//GEN-LAST:event_boton5MouseClicked
+
+    private void boton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton6MouseClicked
+
+        
+        this.boton6.setText("X");
+        
+        
+    }//GEN-LAST:event_boton6MouseClicked
+
+    private void boton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton7MouseClicked
+
+        
+        this.boton7.setText("X");
+        
+        
+    }//GEN-LAST:event_boton7MouseClicked
+
+    private void boton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton8MouseClicked
+
+        
+        this.boton8.setText("X");
+        
+        
+    }//GEN-LAST:event_boton8MouseClicked
+
+    private void boton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_boton9MouseClicked
+
+        
+        this.boton9.setText("X");
+        
+        
+    }//GEN-LAST:event_boton9MouseClicked
 
     /**
      * @param args the command line arguments

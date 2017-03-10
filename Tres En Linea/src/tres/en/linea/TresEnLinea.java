@@ -17,7 +17,8 @@ public class TresEnLinea {
     public static void main(String[] args) {
 
            
-        
+        Grafica miGrafica=new Grafica();
+        miGrafica.setVisible(true);
 
 
 
